@@ -86,3 +86,15 @@ if (isOldEnough) {
     const yearsLeft = 18 - myAge;
     console.log(`You are too young, wait another ${yearsLeft} years :)`);
 }
+
+const myBirthYear = 2012;
+
+let century;
+if (myBirthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+
+// type conversion
