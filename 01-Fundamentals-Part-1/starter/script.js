@@ -75,3 +75,14 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})`);
 }
+
+// conditional statements
+const myAge = 15;
+const isOldEnough = myAge >= 18;
+
+if (isOldEnough) {
+    console.log("You can start driving license🚗");
+} else {
+    const yearsLeft = 18 - myAge;
+    console.log(`You are too young, wait another ${yearsLeft} years :)`);
+}
