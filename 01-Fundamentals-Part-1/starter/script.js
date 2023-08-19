@@ -98,3 +98,13 @@ if (myBirthYear <= 2000) {
 console.log(century);
 
 // type conversion
+
+const inputYear = "1996";
+// we need to convert inputYear to a number
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 10);
+
+console.log(typeof inputYear);
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+console.log(String(23), 23);
