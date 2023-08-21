@@ -141,3 +141,17 @@ if (money) {
 } else {
     console.log("You should get a job!");
 }
+
+// Equality operators:    ==  vs ===
+
+// === : strict equality operator, does not do type coercion
+// == : loosly equality operator, does type coercion
+
+const age1 = "18";
+if (age1 === 18) console.log("You just became an adult :D (strict)");
+
+// above message not gonna print on the console because of strict equality operator
+
+if (age1 == 18) console.log("You just became an adult :D (loose)");
+
+// above message gonna print on the console because of loosly equality operator
