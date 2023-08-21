@@ -155,3 +155,21 @@ if (age1 === 18) console.log("You just became an adult :D (strict)");
 if (age1 == 18) console.log("You just became an adult :D (loose)");
 
 // above message gonna print on the console because of loosly equality operator
+
+const favourite = Number(prompt("What's your favourite number?"));
+// if we are not using Number function prompt gonna return string, so converting it to Number
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 17) {
+    console.log("Cool! 17 is an amzaing number!");
+} else if (favourite === 7) {
+    console.log("7 is also a cool number");
+} else if (favourite === 4) {
+    console.log("4 is also a cool number");
+} else {
+    console.log("Number is not 17 or 7 or 4");
+}
+
+// strictly not equal operator
+if (favourite !== 17) console.log("Why not 17?");
