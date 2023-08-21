@@ -117,3 +117,20 @@ console.log("23" / "2");
 let n = "1" + 1; // '11'
 n = n - 1;
 console.log(n);
+
+// Truthy and Falsy values
+// There are 5 types of falsy values
+
+// 0, '', undefined, null, NaN
+
+console.log(Boolean(0)); // => gonna print false on the console
+console.log(Boolean({})); // => gonna print true on the console
+console.log(Boolean([])); // => gonna print true on the console
+
+let height;
+
+if (height) {
+    console.log("height is defined");
+} else {
+    console.log("height is undefined");
+}
