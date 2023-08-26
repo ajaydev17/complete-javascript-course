@@ -173,3 +173,21 @@ if (favourite === 17) {
 
 // strictly not equal operator
 if (favourite !== 17) console.log("Why not 17?");
+
+//
+const scoreDolphins = (96 + 108 + 100) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+    console.log("Dolphins win the trophy 🏆.");
+} else if (scoreDolphins < scoreKoalas && scoreKoalas >= 100) {
+    console.log("Koalas win the trophy 🏆.");
+} else if (
+    scoreDolphins === scoreKoalas &&
+    scoreDolphins >= 100 &&
+    scoreKoalas >= 100
+) {
+    console.log("Both win the trophy 🏆.");
+} else {
+    console.log("No one wins the trophy 🏆.");
+}
