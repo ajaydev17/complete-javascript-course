@@ -12,3 +12,7 @@ if (passTest) {
 if (hasDriversLicense) {
     console.log("You are eligible to ride!!");
 }
+
+// this will throw the error as interface is a reserved keyword
+const interface = "strict mode example";
+console.log(interface);
