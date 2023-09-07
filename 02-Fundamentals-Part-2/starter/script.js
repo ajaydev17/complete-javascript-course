@@ -46,3 +46,18 @@ function fruitProcess2(apple, orange) {
 
 const result = fruitProcess2(5, 2);
 console.log(result);
+
+// function defination example
+function calcAge(birthYear) {
+    return 2037 - birthYear;
+}
+
+// function expression example / anonymous function
+const getAge = function (birthYear) {
+    return 2037 - birthYear;
+};
+
+// arrow function example
+const getMyAge = (birthYear) => 2037 - birthYear;
+
+console.log(getMyAge(1996));
