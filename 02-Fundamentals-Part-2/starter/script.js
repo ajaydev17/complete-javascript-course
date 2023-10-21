@@ -94,3 +94,27 @@ scoreDolphins = calculateAvergae(85, 54, 41);
 scoreKoalas = calculateAvergae(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
+
+// array
+// creating an empty array
+const myArray1 = [];
+console.log(myArray1);
+
+const myArray2 = ["Sachin", "Ramesh", "Suresh"];
+console.log(myArray2);
+
+// creating an array with new keyword
+const myArray3 = new Array("Sachin1", "Ramesh1", "Suresh1");
+console.log(myArray3);
+
+// accessing the element
+console.log(myArray3[1]);
+
+// get the length of the array
+console.log(myArray3.length);
+
+// mutating the array
+myArray3[4] = "Rajesh1";
+console.log(myArray3);
+console.log(myArray3[3]);
+console.log(myArray3.length);
