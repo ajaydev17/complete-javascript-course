@@ -61,3 +61,36 @@ const getAge = function (birthYear) {
 const getMyAge = (birthYear) => 2037 - birthYear;
 
 console.log(getMyAge(1996));
+
+// calculate Average
+const calculateAvergae = (a, b, c) => {
+    return (a + b + c) / 3;
+};
+
+console.log(calculateAvergae(3, 4, 5));
+
+let scoreDolphins = calculateAvergae(70, 98, 89);
+let scoreKoalas = calculateAvergae(84, 78, 94);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = (dolphinsAverage, koalasAverage) => {
+    if (dolphinsAverage >= 2 * koalasAverage) {
+        console.log(
+            `Dolphins win 🏆 (${dolphinsAverage} vs. ${koalasAverage})`
+        );
+    } else if (koalasAverage >= 2 * dolphinsAverage) {
+        console.log(`Kolas win 🏆 (${koalasAverage} vs. ${dolphinsAverage})`);
+    } else {
+        console.log("No team wins!!...");
+    }
+};
+
+checkWinner(scoreDolphins, scoreKoalas);
+
+checkWinner(576, 111);
+
+// Test 2
+scoreDolphins = calculateAvergae(85, 54, 41);
+scoreKoalas = calculateAvergae(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas);
