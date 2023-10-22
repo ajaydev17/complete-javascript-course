@@ -79,7 +79,7 @@ const checkWinner = (dolphinsAverage, koalasAverage) => {
             `Dolphins win 🏆 (${dolphinsAverage} vs. ${koalasAverage})`
         );
     } else if (koalasAverage >= 2 * dolphinsAverage) {
-        console.log(`Kolas win 🏆 (${koalasAverage} vs. ${dolphinsAverage})`);
+        console.log(`Koalas win 🏆 (${koalasAverage} vs. ${dolphinsAverage})`);
     } else {
         console.log("No team wins!!...");
     }
@@ -118,3 +118,43 @@ myArray3[4] = "Rajesh1";
 console.log(myArray3);
 console.log(myArray3[3]);
 console.log(myArray3.length);
+
+// array basic operations/methods
+
+// push method : inserts the element at the end of the array
+// the return value of the push method is the length of the array
+const friends = ["Jay", "Shan"];
+const arrayLength = friends.push("Jacob");
+console.log(friends);
+console.log(arrayLength);
+
+// unshift method : inserts the element at the beginning of the array
+friends.unshift("Marshall");
+console.log(friends);
+
+// pop method : removes the element from the end of the array
+// the return value of the pop method is the removed element
+let removedElement = friends.pop();
+console.log(friends);
+console.log(removedElement);
+
+// shift method : removes the element at the beginning of the array
+// the return value of the shift method is the removed element
+removedElement = friends.shift();
+console.log(friends);
+console.log(removedElement);
+
+// indexOf method : returns the position of the element in the array
+const indexOfJay = friends.indexOf("Jay");
+console.log(indexOfJay);
+
+// if not present returns -1
+const indexOfShaun = friends.indexOf("Shaun");
+console.log(indexOfShaun);
+
+// includes method : returns the true/false depending upon whether the element is present or not
+const includesJay = friends.includes("Jay");
+console.log(includesJay);
+
+const includesShaun = friends.includes("Shaun");
+console.log(includesShaun);
