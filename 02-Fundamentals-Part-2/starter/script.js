@@ -193,6 +193,46 @@ jonas.location = "Portugal";
 jonas["twitter"] = "@jonasschemdtman";
 console.log(jonas);
 
+// object methods
+const jonasNew = {
+    firstName: "Jonas",
+    lastName: "Schemdtmann",
+    job: "teacher",
+    birthYear: 1991,
+    friends: ["Michael", "John", "Jacob"],
+    hasDriversLicense: true,
+
+    calcCurrentAge: function (birthYear) {
+        return 2037 - birthYear;
+    },
+
+    calcCurrentAge_1: function () {
+        return 2037 - this.birthYear;
+    },
+
+    calcCurrentAge_2: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.age}-years old ${
+            this.job
+        }, he has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+    },
+};
+
+console.log(jonasNew.calcCurrentAge(1991));
+console.log(jonasNew["calcCurrentAge"](1991));
+
+console.log(jonasNew.calcCurrentAge_1());
+console.log(jonasNew["calcCurrentAge_1"]());
+
+console.log(jonasNew.calcCurrentAge_2());
+console.log(jonasNew["calcCurrentAge_2"]());
+
+console.log(jonasNew.getSummary());
+
 const mark = {
     fullName: "Mark Miller",
     mass: 78,
