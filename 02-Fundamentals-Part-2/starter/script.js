@@ -158,3 +158,37 @@ console.log(includesJay);
 
 const includesShaun = friends.includes("Shaun");
 console.log(includesShaun);
+
+// javascript object
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schemdtmann",
+    job: "teacher",
+    age: "30",
+    friends: ["Michael", "John", "Jacob"],
+};
+
+// accessing the elements using dot and brackets []
+console.log(jonas.firstName);
+console.log(jonas["firstName"]);
+
+// Inside bracket notation we can perform any operation but with dot notation we cannot
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+// but below one will throw error
+// console.log(jonas.'first' + nameKey);
+
+const interestedIn = prompt("What you wanna know about Jonas, his ???");
+
+// the below one will print undefined on the console as interstedIn considered as property of the object
+console.log(jonas.interestedIn);
+
+// the below one will print the corresponding property on the console becuase it consider it as expression
+console.log(jonas[interestedIn]);
+
+// adding property to the object using dot and bracket notation
+jonas.location = "Portugal";
+jonas["twitter"] = "@jonasschemdtman";
+console.log(jonas);
