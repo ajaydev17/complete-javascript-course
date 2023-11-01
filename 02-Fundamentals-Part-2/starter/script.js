@@ -265,3 +265,41 @@ if (mark.bmi > john.bmi) {
         `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`
     );
 }
+
+// for loop example
+// it will run untill it matches with the condition
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+
+// Looping Arrays, Breaking and Continuing
+const anotherJonas = [
+    "Jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"],
+    true,
+];
+
+console.log(anotherJonas[10]);
+const types = [];
+
+for (let i = 0; i < anotherJonas.length; i++) {
+    console.log(anotherJonas[i], typeof anotherJonas[i]);
+
+    // filling the types array
+    // types[i] = typeof anotherJonas[i];
+    types.push(typeof anotherJonas[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
