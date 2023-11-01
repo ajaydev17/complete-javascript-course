@@ -317,3 +317,27 @@ for (let i = 0; i < anotherJonas.length; i++) {
 
     console.log(anotherJonas[i], typeof anotherJonas[i]);
 }
+
+// looping backwards
+for (let i = anotherJonas.length - 1; i >= 0; i--) {
+    console.log(i, anotherJonas[i]);
+}
+
+// loop inside the loop
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`-------- Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(
+            `Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`
+        );
+    }
+}
+
+// WHILE loop
+let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
+    rep++;
+}
