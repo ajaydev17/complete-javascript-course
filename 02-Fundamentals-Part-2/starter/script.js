@@ -303,3 +303,17 @@ for (let i = 0; i < years.length; i++) {
 }
 
 console.log(ages);
+
+// continue and break example
+
+for (let i = 0; i < anotherJonas.length; i++) {
+    if (typeof anotherJonas[i] === "string") continue;
+
+    console.log(anotherJonas[i], typeof anotherJonas[i]);
+}
+
+for (let i = 0; i < anotherJonas.length; i++) {
+    if (typeof anotherJonas[i] === "object") break;
+
+    console.log(anotherJonas[i], typeof anotherJonas[i]);
+}
